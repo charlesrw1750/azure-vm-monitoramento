@@ -2,62 +2,64 @@
 
 ## 🧠 Descrição do Projeto
 
-Este repositório foi desenvolvido como parte de um desafio prático da DIO, com o propósito de aplicar os conhecimentos adquiridos sobre monitoramento no Microsoft Azure, com ênfase em máquinas virtuais (VMs). Além da execução técnica, o projeto destaca a importância de uma documentação clara, estruturada e acessível publicamente.
+Este repositório documenta um desafio prático da DIO, focando no monitoramento de VMs no Azure utilizando exclusivamente o Azure Monitor. O projeto demonstra como configurar alertas para eventos críticos e a importância da documentação técnica clara.
 
 ## 🎯 Objetivo
 
-O objetivo principal deste projeto consiste em:
+- Configurar monitoramento básico de VMs usando Azure Monitor
+- Criar alertas para eventos de exclusão de recursos
+- Validar o fluxo de monitoramento através de testes práticos
+- Documentar o processo para referência futura
 
-- Demonstrar a configuração e o gerenciamento do monitoramento de VMs no Azure;
-- Garantir visibilidade e controle sobre eventos críticos, como a exclusão de recursos;
-- Elaborar um material de apoio contendo resumos, anotações e recomendações para futuras implementações.
+## 🛠️ Tecnologias Utilizadas
 
-## 🛠️ Tecnologias e Ferramentas Utilizadas
-
-- Microsoft Azure  
-- Azure Monitor  
-- Log Analytics Workspace  
-- Alertas baseados em métricas  
-- Git e GitHub  
-- Markdown  
+- **Azure Monitor** (serviço principal)
+- Máquinas Virtuais Azure
+- Alertas por email
+- GitHub (documentação)
 
 ## 📚 Estrutura do Repositório
 
-| Arquivo/Pasta  | Descrição                                           |
-|----------------|----------------------------------------------------|
-| `/images`      | Capturas de tela ilustrativas da implementação no portal Azure |
-| `README.md`    | Documento principal com a descrição do projeto     |
+| Arquivo/Pasta | Descrição |
+|--------------|-----------|
+| `/images` | Contém: <br> • Print do alerta no portal <br> • Email de notificação recebido |
+| `README.md` | Documentação principal |
 
-## 📸 Imagens
+## 📸 Evidências
 
-As imagens que ilustram o processo de configuração que estão organizadas na pasta `/images`.
+Confira na pasta `/images`:
+1. `alerta-portal.png` - Alerta disparado no Azure Portal
+2. `alerta-email.png` - Notificação recebida por email
 
-## 🧾 Etapas Desenvolvidas
+## 🔧 Passo a Passo Executado
 
-1. Criação da máquina virtual no ambiente Azure  
-2. Configuração do Log Analytics Workspace  
-3. Ativação dos diagnósticos e integração com o workspace  
-4. Definição de regras de alerta para monitoramento de eventos críticos  
-5. Testes práticos com exclusão da VM para validação dos alertas  
-6. Registro e documentação de toda a experiência neste repositório  
+### Tarefa 1: Configurar Monitoramento Básico
+- Habilitado o Azure Monitor para a VM
+- Verificado métricas básicas (CPU, memória, disco)
 
-## 🧠 Principais Aprendizados
+### Tarefa 2: Criar Regra de Alerta
+- Criada regra para monitorar eventos de exclusão:
+  - Tipo: "Activity Log - Delete Virtual Machine"
+  - Ação: Notificação por email
 
-- Configuração e vinculação de recursos a um workspace do Log Analytics  
-- Criação de alertas personalizados baseados em logs e métricas  
-- Importância da documentação técnica clara e bem estruturada  
-- Uso do GitHub como ferramenta para registro e compartilhamento de conhecimento técnico  
+### Tarefa 3: Teste Prático
+1. Excluído a VM propositalmente
+2. Verificado:
+   - Alerta no Azure Portal (15-30 min após exclusão)
+   - Recebimento do email de notificação
 
-## ✅ Status do Projeto
+## 💡 Principais Aprendizados
+- Fluxo completo de criação e teste de alertas
+- Tempo de propagação de alertas no Azure
+- Diferença entre métricas em tempo real e logs de atividade
+- Importância de testar regras de alerta
 
-✔️ Concluído  
+## ✅ Status
+✔️ Concluído com sucesso
 
 ## 🤝 Contribuições
-
-Este repositório é destinado a fins pessoais e de estudo, mas contribuições, sugestões e correções são bem-vindas por meio de issues ou pull requests.
+Sugestões são bem-vindas via Issues.
 
 ## 📌 Referências
-
-- [Microsoft Learn - Monitoramento de VMs no Azure](https://learn.microsoft.com/pt-br/azure/azure-monitor/vm/vminsights-overview)  
-- [Documentação oficial do GitHub](https://docs.github.com/)  
-- [Plataforma de Aprendizado DIO](https://www.dio.me/)  
+- [Documentação do Azure Monitor](https://learn.microsoft.com/pt-br/azure/azure-monitor/)
+- [Tipos de alertas suportados](https://learn.microsoft.com/pt-br/azure/azure-monitor/alerts/alerts-types)
