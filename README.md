@@ -22,8 +22,8 @@ Este repositório documenta um desafio prático da DIO, focando no monitoramento
 
 | Arquivo/Pasta | Descrição |
 |--------------|-----------|
-| `/images` | Contém: <br> • Print do alerta no portal <br> • Email de notificação recebido |
-| `README.md` | Documentação principal |
+| `/images` | Contém os comprovantes de cada etapa: <br><br> **Tarefa 1** - Habilitar Monitoramento: <br> • `vm-monitor-ativo.png` <br><br> **Tarefa 2** - Configuração de Alerta: <br> • `regra-alerta-exclusao.png` <br><br> **Tarefa 3** - Testes: <br> • `alerta-portal-apos-exclusao.png` (resultado no Azure) <br> • `email-alerta-recebido.jpg` (comprovação de notificação) |
+| `README.md` | Documentação principal do projeto |
 
 ## 📸 Evidências
 
